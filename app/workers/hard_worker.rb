@@ -41,7 +41,7 @@ class HardWorker
 	  csv.drop(1).each do |row|
 	    data = row.to_s.split(",")
 	    if data[1].present?
-	    DsLinksLocation.create(
+	    DsLinksLocation.find_or_create_by(
 	      source_id: data[0],
 	      location_name: data[1],
 	      description: data[2]
@@ -70,7 +70,7 @@ class HardWorker
 	  csv.drop(1).each do |row|
 	    data = row.to_s.split(",")
 	    if data[1].present?
-	    DsLinksLevel.create(
+	    DsLinksLevel.find_or_create_by(
 	      source_id: data[0],
 	      description: data[1],
 	      color: data[2]
@@ -109,9 +109,9 @@ class HardWorker
 
 	    # We need to find the parent level first
 	    get_level = DsLinksLevel.where(description: data[1]).last
-	    # Only if we find it should we create the level
+	    # Only if we find it should we find_or_create_by the level
 	    if get_level.present? && refactor_skill.present?
-	      DsLinksSkill.create(
+	      DsLinksSkill.find_or_create_by(
 	        source_id: data[0],
 	        ds_links_level_id: get_level.id,
 	        skill: refactor_skill,
@@ -160,7 +160,7 @@ class HardWorker
 	    data = row.to_s.split(",")
 	    #find location
 	    found_location = DsLinksLocation.where(source_id: data[14].to_i).last
-	      DsLinksPerson.create(
+	      DsLinksPerson.find_or_create_by(
 	        source_id: data[0],
 	        surname: data[1],
 	        given_name: data[2],
@@ -206,7 +206,7 @@ class HardWorker
 	    found_location = DsLinksLocation.where(source_id: data[8].to_i).last
 	    found_level = DsLinksLevel.where(source_id: data[9].to_i).last
 	    data = row.to_s.split(",")
-	      DsLinksClass.create(
+	      DsLinksClass.find_or_create_by(
 	        source_id: data[0],
 	        start_date: data[1],
 	        end_date: data[2],
@@ -245,7 +245,7 @@ class HardWorker
 	      found_people = DsLinksPerson.where(source_id: data[2].to_i).last
 	      found_level = DsLinksLevel.where(description: data[3]).last
 
-	      DsLinksStudentLevel.create(
+	      DsLinksStudentLevel.find_or_create_by(
 	        source_id: data[0],
 	        date_started: data[1],
 	        ds_links_people_id: found_people.present? ? found_people.id : nil,
@@ -279,7 +279,7 @@ class HardWorker
 	      found_people = DsLinksPerson.where(source_id: data[2].to_i).last
 	      found_skill = DsLinksSkill.where(source_id: data[3].to_i).last
 
-	      DsLinksStudentSkill.create(
+	      DsLinksStudentSkill.find_or_create_by(
 	        source_id: data[0],
 	        date_started: data[1],
 	        ds_links_people_id: found_people.present? ? found_people.id : nil,
@@ -313,7 +313,7 @@ class HardWorker
 	      found_people = DsLinksPerson.where(source_id: data[1].to_i).last
 	      found_class = DsLinksClass.where(source_id: data[2].to_i).last
 
-	      DsLinksStudentSkill.create(
+	      DsLinksStudentSkill.find_or_create_by(
 	        source_id: data[0],
 	        ds_links_people_id: found_people.present? ? found_people.id : nil,
 	        ds_links_skill_id: found_class.present? ? found_class.id : nil,
