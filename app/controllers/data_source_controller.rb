@@ -13,7 +13,7 @@ class DataSourceController < ApplicationController
   require 'csv'
 
   def initiate_worker
-    HarderWorker.perform_async()
+    HardWorker.perform_async()
     head :ok
   end
 
