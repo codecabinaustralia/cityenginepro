@@ -314,7 +314,7 @@ class HardWorker
 	      found_people = DsLinksPerson.where(source_id: data[1].to_i).last
 	      found_class = DsLinksClass.where(source_id: data[2].to_i).last
 
-	      DsLinksStudentSkill.find_or_create_by(
+	      DsLinksLessonBooking.find_or_create_by(
 	        source_id: data[0],
 	        ds_links_people_id: found_people.present? ? found_people.id : nil,
 	        ds_links_skill_id: found_class.present? ? found_class.id : nil,
