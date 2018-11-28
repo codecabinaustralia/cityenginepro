@@ -1,6 +1,6 @@
 class EngineController < ApplicationController
   before_action :set_default_format
-  def location
+  def locations
     @locations = Location.all
     if @locations != nil
     respond_to do |format|

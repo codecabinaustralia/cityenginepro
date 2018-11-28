@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 namespace :api do
   namespace :v1 do
-    get 'engine/location'
+    get 'engine/locations'
     get 'engine/levels'
     get 'engine/skills'
     get 'engine/people'
