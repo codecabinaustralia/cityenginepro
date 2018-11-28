@@ -48,10 +48,6 @@ class HardWorker
 	      )
 	    end
 	  end
-
-	  # We don't need a view here as it's run by a cron
-	  # So we just render a 200 response
-	  head :ok
 	end
 
 	def levels
@@ -82,9 +78,7 @@ class HardWorker
 	    end
 	  end
 
-	  # We don't need a view here as it's run by a cron
-	  # So we just render a 200 response
-	  head :ok
+	  
 	end
 
 	def skills
@@ -140,9 +134,7 @@ class HardWorker
 	  @redundant_levels = DsLinksLevel.where.not(id: @levels).all
 	  @redundant_levels.destroy_all
 
-	  # We don't need a view here as it's run by a cron
-	  # So we just render a 200 response
-	  head :ok
+	  
 	end
 
 	def people
@@ -188,9 +180,7 @@ class HardWorker
 	        )
 	  end
 
-	  # We don't need a view here as it's run by a cron
-	  # So we just render a 200 response
-	  head :ok 
+	   
 	end
 
 	def classes
@@ -230,9 +220,7 @@ class HardWorker
 	      )
 	  end
 
-	  # We don't need a view here as it's run by a cron
-	  # So we just render a 200 response
-	  head :ok 
+	   
 	end
 
 	def student_levels
@@ -266,9 +254,7 @@ class HardWorker
 	      )
 	  end
 
-	  # We don't need a view here as it's run by a cron
-	  # So we just render a 200 response
-	  head :ok 
+	   
 	end
 
 	def student_skills
@@ -302,9 +288,7 @@ class HardWorker
 	      )
 	  end
 
-	  # We don't need a view here as it's run by a cron
-	  # So we just render a 200 response
-	  head :ok 
+	   
 	end
 
 	def lesson_bookings
@@ -343,9 +327,7 @@ class HardWorker
 	      )
 	  end
 
-	  # We don't need a view here as it's run by a cron
-	  # So we just render a 200 response
-	  head :ok 
+	   
 	end
 
 end
