@@ -202,7 +202,7 @@ class HardWorker
 
 	  # Now link through the csv saving each record appropriatly, ignoring the first line
 	  csv.drop(1).each do |row|
-	    found_person = DsLinksPeople.where(source_id: data[6].to_i).last
+	    found_person = DsLinksPerson.where(source_id: data[6].to_i).last
 	    found_location = DsLinksLocation.where(source_id: data[8].to_i).last
 	    found_level = DsLinksLevel.where(source_id: data[9].to_i).last
 	    data = row.to_s.split(",")
@@ -242,7 +242,7 @@ class HardWorker
 	  # Now link through the csv saving each record appropriatly, ignoring the first line
 	  csv.drop(1).each do |row|
 	    data = row.to_s.split(",")
-	      found_people = DsLinksPeople.where(source_id: data[2].to_i).last
+	      found_people = DsLinksPerson.where(source_id: data[2].to_i).last
 	      found_level = DsLinksLevel.where(description: data[3]).last
 
 	      DsLinksStudentLevel.create(
@@ -276,7 +276,7 @@ class HardWorker
 	  # Now link through the csv saving each record appropriatly, ignoring the first line
 	  csv.drop(1).each do |row|
 	    data = row.to_s.split(",")
-	      found_people = DsLinksPeople.where(source_id: data[2].to_i).last
+	      found_people = DsLinksPerson.where(source_id: data[2].to_i).last
 	      found_skill = DsLinksSkill.where(source_id: data[3].to_i).last
 
 	      DsLinksStudentSkill.create(
@@ -310,7 +310,7 @@ class HardWorker
 	  # Now link through the csv saving each record appropriatly, ignoring the first line
 	  csv.drop(1).each do |row|
 	    data = row.to_s.split(",")
-	      found_people = DsLinksPeople.where(source_id: data[1].to_i).last
+	      found_people = DsLinksPerson.where(source_id: data[1].to_i).last
 	      found_class = DsLinksClass.where(source_id: data[2].to_i).last
 
 	      DsLinksStudentSkill.create(
