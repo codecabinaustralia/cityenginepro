@@ -202,7 +202,6 @@ class HardWorker
 
 	  # Now link through the csv saving each record appropriatly, ignoring the first line
 	  csv.drop(1).each do |row|
-	    
 	    data = row.to_s.split(",")
 	    found_person = DsLinksPerson.where(source_id: data[6].to_i).last
 	    found_location = DsLinksLocation.where(source_id: data[8].to_i).last
