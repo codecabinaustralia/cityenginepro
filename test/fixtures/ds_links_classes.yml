@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  start_date: 2018-11-27
+  end_date: 2018-11-27
+  lesson_day: MyString
+  lesson_start: 2018-11-27 17:04:37
+  lesson_end: 2018-11-27 17:04:37
+  ds_links_people: one
+  max_students: 1
+  ds_links_location: one
+  ds_links_level: one
+
+two:
+  start_date: 2018-11-27
+  end_date: 2018-11-27
+  lesson_day: MyString
+  lesson_start: 2018-11-27 17:04:37
+  lesson_end: 2018-11-27 17:04:37
+  ds_links_people: two
+  max_students: 1
+  ds_links_location: two
+  ds_links_level: two

@@ -1,0 +1,2 @@
+class DsLinksLevel < ApplicationRecord
+end

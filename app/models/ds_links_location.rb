@@ -1,0 +1,2 @@
+class DsLinksLocation < ApplicationRecord
+end

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  source_id: MyString
+  ds_links_people: one
+  ds_links_skill: one
+  date_achieved: 2018-11-27
+
+two:
+  source_id: MyString
+  ds_links_people: two
+  ds_links_skill: two
+  date_achieved: 2018-11-27

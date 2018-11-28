@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  source_id: MyString
+  ds_links_people: one
+  ds_links_class: one
+  date_booked: 2018-11-27
+  is_makeup: false
+  is_held: false
+  attended: false
+  cancelled: 2018-11-27
+  is_suspended: false
+  is_casual: false
+
+two:
+  source_id: MyString
+  ds_links_people: two
+  ds_links_class: two
+  date_booked: 2018-11-27
+  is_makeup: false
+  is_held: false
+  attended: false
+  cancelled: 2018-11-27
+  is_suspended: false
+  is_casual: false

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  source_id: MyString
+  date_started: 2018-11-27
+  ds_links_people: one
+  ds_links_level: one
+  date_attained: 2018-11-27
+
+two:
+  source_id: MyString
+  date_started: 2018-11-27
+  ds_links_people: two
+  ds_links_level: two
+  date_attained: 2018-11-27
