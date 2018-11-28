@@ -1,0 +1,1 @@
+json.locations @locations, :id, :location_name, :description, :created_at

@@ -2,6 +2,15 @@ class EngineController < ApplicationController
   before_action :set_default_format
   def location
     @locations = Location.all
+    if @locations != nil
+    respond_to do |format|
+        format.json
+    end
+    else
+      render json: {
+        error: "No Skill Found"
+      }
+    end
   end
 
   def levels
