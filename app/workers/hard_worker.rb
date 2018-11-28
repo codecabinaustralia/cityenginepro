@@ -213,7 +213,7 @@ class HardWorker
 	        lesson_day: data[3],
 	        lesson_start: data[4],
 	        lesson_end: data[5],
-	        ds_links_people_id: found_person.present? ? found_person.id : nil,
+	        ds_links_person_id: found_person.present? ? found_person.id : nil,
 	        max_students: data[7],
 	        ds_links_location_id: found_location.present? ? found_location.id : nil,
 	        ds_links_level_id: found_level.present? ? found_level.id : nil

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_27_073031) do
+ActiveRecord::Schema.define(version: 2018_11_28_073307) do
 
   create_table "ds_links_classes", force: :cascade do |t|
     t.string "source_id"
@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 2018_11_27_073031) do
     t.integer "ds_links_level_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "ds_links_person_id"
     t.index ["ds_links_level_id"], name: "index_ds_links_classes_on_ds_links_level_id"
     t.index ["ds_links_location_id"], name: "index_ds_links_classes_on_ds_links_location_id"
     t.index ["ds_links_people_id"], name: "index_ds_links_classes_on_ds_links_people_id"
