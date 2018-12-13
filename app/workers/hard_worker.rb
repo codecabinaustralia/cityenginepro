@@ -104,9 +104,9 @@ class HardWorker
 	  ftp.chdir("/")
 	  ftp.passive = true
 	  # Save to file to a tmp_path
-	  ftp.getbinaryfile("CodeCabin_Skills_Hist.csv", "tmp_path")
+	  ftp.getbinaryfile("CodeCabin_Skills_Hist.csv", "tmp_skills_path")
 	  # Open the tmp_path
-	  csv_text = open("tmp_path")
+	  csv_text = open("tmp_skills_path")
 	  csv = CSV.parse(csv_text, :headers=>true)
 
 	  # Now link through the csv saving each record appropriatly, ignoring the first line
@@ -166,9 +166,9 @@ class HardWorker
 	  ftp.chdir("/")
 	  ftp.passive = true
 	  # Save to file to a tmp_path
-	  ftp.getbinaryfile("CodeCabin_People_ENTIRE.csv", "tmp_path")
+	  ftp.getbinaryfile("CodeCabin_People_ENTIRE.csv", "tmp_people_path")
 	  # Open the tmp_path
-	  csv_text = open("tmp_path")
+	  csv_text = open("tmp_people_path")
 	  csv = CSV.parse(csv_text, :headers=>true)
 
 	  # Now link through the csv saving each record appropriatly, ignoring the first line
@@ -213,9 +213,9 @@ class HardWorker
 	  ftp.chdir("/")
 	  ftp.passive = true
 	  # Save to file to a tmp_path
-	  ftp.getbinaryfile("CodeCabin_Classes_ENTIRE.csv", "tmp_path")
+	  ftp.getbinaryfile("CodeCabin_Classes_ENTIRE.csv", "tmp_classes_path")
 	  # Open the tmp_path
-	  csv_text = open("tmp_path")
+	  csv_text = open("tmp_classes_path")
 	  csv = CSV.parse(csv_text, :headers=>true)
 
 	  # Now link through the csv saving each record appropriatly, ignoring the first line
@@ -254,9 +254,9 @@ class HardWorker
 	  ftp.chdir("/")
 	  ftp.passive = true
 	  # Save to file to a tmp_path
-	  ftp.getbinaryfile("CodeCabin_StudentLevels_2018.csv", "tmp_path")
+	  ftp.getbinaryfile("CodeCabin_StudentLevels_2018.csv", "tmp_student_levels_path")
 	  # Open the tmp_path
-	  csv_text = open("tmp_path")
+	  csv_text = open("tmp_student_levels_path")
 	  csv = CSV.parse(csv_text, :headers=>true)
 	  row_num = 0
 	  # Now link through the csv saving each record appropriatly, ignoring the first line
@@ -292,9 +292,9 @@ class HardWorker
 	  ftp.chdir("/")
 	  ftp.passive = true
 	  # Save to file to a tmp_path
-	  ftp.getbinaryfile("CodeCabin_StudentLevels_2018.csv", "tmp_path")
+	  ftp.getbinaryfile("CodeCabin_StudentLevels_2018.csv", "tmp_student_skills_path")
 	  # Open the tmp_path
-	  csv_text = open("tmp_path")
+	  csv_text = open("tmp_student_skills_path")
 	  csv = CSV.parse(csv_text, :headers=>true)
 	  row_num = 0
 	  # Now link through the csv saving each record appropriatly, ignoring the first line
@@ -331,9 +331,9 @@ class HardWorker
 	  ftp.chdir("/")
 	  ftp.passive = true
 	  # Save to file to a tmp_path
-	  ftp.getbinaryfile("CodeCabin_LessonBookings_2018.csv", "tmp_path")
+	  ftp.getbinaryfile("CodeCabin_LessonBookings_2018.csv", "tmp_lesson_bookings_path")
 	  # Open the tmp_path
-	  csv_text = open("tmp_path")
+	  csv_text = open("tmp_lesson_bookings_path")
 	  csv = CSV.parse(csv_text, :headers=>true)
 
 	  # Now link through the csv saving each record appropriatly, ignoring the first line
