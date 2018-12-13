@@ -20,7 +20,7 @@ class AnalyseController < ApplicationController
       end
 
       # Save result somewhere
-      
+
     end
 
   end
@@ -63,4 +63,4 @@ class AnalyseController < ApplicationController
 end
 
 
-rails g migration AddAnalystFieldsToDsLinksStudentLevel days_from_level_achieved:integer
+#rails g migration AddAnalystFieldsToDsLinksStudentLevel days_from_level_achieved:integer
