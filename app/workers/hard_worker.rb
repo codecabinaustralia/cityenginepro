@@ -3,7 +3,7 @@ class HardWorker
 	sidekiq_options retry: false
 
 	def perform()
-		puts "Running locations"
+		puts "START Running locations"
 		locations
 		puts "Running Levels"
 		levels
@@ -56,7 +56,7 @@ class HardWorker
 
 	  # We don't need a view here as it's run by a cron
 	  # So we just render a 200 response
-	  #
+	  
 	end
 
 	def levels
