@@ -3,7 +3,7 @@ class HardWorker
 	sidekiq_options retry: false
 
 	def perform()
-		puts "START Running locations"
+		puts "Running locations"
 		locations
 		puts "Running Levels"
 		levels
