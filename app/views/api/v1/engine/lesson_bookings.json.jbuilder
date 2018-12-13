@@ -1,0 +1,1 @@
+json.lesson_bookings @lesson_bookings
