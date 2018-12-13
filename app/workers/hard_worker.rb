@@ -56,7 +56,7 @@ class HardWorker
 
 	  # We don't need a view here as it's run by a cron
 	  # So we just render a 200 response
-	  head :ok
+	  #
 	end
 
 	def levels
@@ -89,7 +89,7 @@ class HardWorker
 
 	  # We don't need a view here as it's run by a cron
 	  # So we just render a 200 response
-	  head :ok
+	  #
 	end
 
 	def skills
@@ -152,7 +152,7 @@ class HardWorker
 
 	  # We don't need a view here as it's run by a cron
 	  # So we just render a 200 response
-	  head :ok
+	  
 	end
 
 	def people
