@@ -61,6 +61,3 @@ class AnalyseController < ApplicationController
   def identify_current_student_level
   end
 end
-
-
-#rails g migration AddAnalystFieldsToDsLinksStudentLevel days_from_level_achieved:integer
