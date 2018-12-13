@@ -285,7 +285,6 @@ class HardWorker
 	def student_skills
 	  # StudentSkills is an extract from Links StudentLevelSkills table
 	  # It defines all of the skills in which a student is at and the date in which it has been attained if any
-
 	  # Connect to FTP Server and get CSV File
 	  ftp = Net::FTP.new
 	  ftp.connect("203.13.68.170",21)
