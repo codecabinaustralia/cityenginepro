@@ -32,9 +32,9 @@ class HardWorker
 	  ftp.chdir("/")
 	  ftp.passive = true
 	  # Save to file to a tmp_path
-	  ftp.getbinaryfile("CodeCabin_Locations_Hist.csv", "tmp_path")
+	  ftp.getbinaryfile("CodeCabin_Locations_Hist.csv", "tmp_location_path")
 	  # Open the tmp_path
-	    csv_text = open("tmp_path")
+	    csv_text = open("tmp_location_path")
 	  csv = CSV.parse(csv_text, :headers=>true)
 
 	  # Now link through the csv saving each record appropriatly, ignoring the first line
